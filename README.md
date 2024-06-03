@@ -6,7 +6,7 @@
 
 ### Applications:
 
-Applying the module federation technique to share code/resources of todo-app to todo-host. todo-app alse can be run independently.
+Applying the module federation technique to share code/resources of todo-app to todo-host. todo-app also can be run independently.
 
 todo-host (Host of the micro frontend)
 
