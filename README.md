@@ -1,5 +1,9 @@
 # React Micro Frontend Todo app
 
+![Kapture 2024-06-03 at 16 09 04](https://github.com/learnbit/mfe-taller-todo/assets/37585248/821b9eae-e462-4bae-a55a-2c5cba88d23f)
+
+
+
 ### Applications:
 
 todo-host (Host of the micro frontend)
