@@ -7,8 +7,9 @@ export const initialState: TodoState = {
 export const temp: () => void | undefined = () => {};
 
 export const initializer = (initialValue: TodoState) => {
-	const localTodo = JSON.parse(localStorage.getItem("localTodo") || "");
-	console.log(`WILSON getting from local storage`, { localTodo });
+	const localTodo = JSON.parse(
+		localStorage.getItem("localTodo") || JSON.stringify(initialState)
+	);
 
 	return localTodo || initialValue;
 };
@@ -41,36 +42,14 @@ export const reducer = (state: TodoState, action: TodoAction): TodoState => {
 				return todo;
 			});
 
-			// const filteredTodosUpdated = state.filteredTodos.map((todo) => {
-			// 	if (todo.id === todoId) {
-			// 		todo.completed = !todo.completed;
-			// 	}
-
-			// 	return todo;
-			// });
-
 			return {
 				...state,
 				todos: todosUpdated,
-				// filteredTodos: filteredTodosUpdated,
 			};
 		case "filter":
-			// const filteredTodos = state.todos.filter((todo) => {
-			// 	if (action.payload.by === "completed") {
-			// 		return todo.completed;
-			// 	}
-
-			// 	if (action.payload.by === "active") {
-			// 		return !todo.completed;
-			// 	}
-
-			// 	return todo;
-			// });
-
 			return {
 				...state,
 				activeFilter: action.payload.by,
-				// filteredTodos,
 			};
 
 		default:
