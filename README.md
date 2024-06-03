@@ -10,11 +10,11 @@ Applying the module federation technique to share code/resources of todo-app to 
 
 todo-app also can be run independently or it can be reused in the todo-host app.
 
-todo-host (Host of the micro frontend)
+- todo-host (Host of the micro frontend)
 
-todo-app (Micro frontend)
+- todo-app (Micro frontend)
 
-Local storage (check context and reducer components) was used to store the data across browser refreshes.
+Note: Local storage (check context and reducer components) was used to store the data across browser refreshes.
 
 ###  Components in todo-app:
 
