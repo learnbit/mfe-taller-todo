@@ -12,6 +12,8 @@ todo-host (Host of the micro frontend)
 
 todo-app (Micro frontend)
 
+Local storage (check context and reducer comoponents) was used to store the data across browser refreshes.
+
 ###  Components in todo-app:
 
 **input:** used for showing an input text
